@@ -1,2 +1,2 @@
-# Node-express-Blog
-A simple  blog site created in node and express framework
+# Node-express-Dashboard
+A simple analytics dashboard  created in node and express framework
