@@ -2,9 +2,9 @@ const User = require("../models/User")
 const bcrypt = require("bcrypt")
 
 module.exports = (req,res) => {
-    const {email,password} = req.body;
+    const { email,password } = req.body;
 
-    User.findOne({email},(error,user)=>{
+    User.findOne({ email },(error,user)=>{
         if (user){
             bcrypt.compare(password, user.password,(error, result) => {
                 if(result){

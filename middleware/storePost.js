@@ -1,5 +1,6 @@
-module.exports = (req,res,next) => {
-    if(!req.file.image || !req.body.username || !req.body.title || !req.body.subtitle || !req.body.content){
+
+module.exports = (req, res, next) => {
+    if ( !req.files || !req.body.author || !req.body.title || !req.body.subtitle || !req.body.content) {
         return res.redirect("/posts/new")
     }
     next()
