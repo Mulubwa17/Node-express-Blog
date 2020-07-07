@@ -1,0 +1,18 @@
+{
+  "name": "Node-express-Blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": "git@github.com:Mulubwa17/Node-express-Blog.git",
+  "author": "Mulubwa17 <mulubwac@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.2",
+    "mongoose": "^5.9.22",
+    "nodemon": "^2.0.4"
+  }
+}
