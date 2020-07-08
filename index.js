@@ -81,7 +81,7 @@ app.get("/post/:id", getPostController)
 
 app.get("/posts/new", auth, createPostController)
 
-app.post("posts/store", auth, storePost, storePostController)
+app.post("/posts/store", auth, storePost, storePostController)
 
 
 // User routes
