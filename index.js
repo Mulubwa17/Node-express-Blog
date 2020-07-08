@@ -22,7 +22,7 @@ const logoutController = require("./controllers/logout")
 
 const app = express()
 
-mongoose.connect(process.env.DB_URI, {
+mongoose.connect("mongodb://127.0.0.1:27017/Node-Blog", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -103,6 +103,6 @@ app.use((req, res) => res.render("404"))
 
 
 
-app.listen(process.env.PORT, () => {
-    console.log(`app listening on port ${process.env.PORT}`)
+app.listen(4000, () => {
+    console.log('app listening on port 4000')
 })
